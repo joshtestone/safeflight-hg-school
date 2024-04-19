@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       security-events: write
+      contents: read
     env:
       IMAGE_REPO: ${{ secrets.DOCKER_USERNAME }}/nix-foundation
       IMAGE_TAG: latest
