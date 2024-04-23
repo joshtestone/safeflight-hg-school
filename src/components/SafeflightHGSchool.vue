@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "SafeflightHGSchool",
+  name: "SafeFlightHGSchool",
   props: {
     msg: String,
   },

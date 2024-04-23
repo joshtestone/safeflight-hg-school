@@ -1,15 +1,15 @@
 <template>
   <img id="portrait" alt="Portrait" src="./assets/portrait.jpg" />
-  <SafeflightHGSchool msg="Welcome to the Safeflight Hang Gliding School" />
+  <SafeflightHGSchool msg="Welcome to the SafeFlight Hang Gliding School" />
 </template>
 
 <script>
-import SafeflightHGSchool from "./components/SafeflightHGSchool.vue";
+import SafeFlightHGSchool from "./components/SafeFlightHGSchool.vue";
 
 export default {
   name: "App",
   components: {
-    SafeflightHGSchool,
+    SafeFlightHGSchool,
   },
 };
 </script>
