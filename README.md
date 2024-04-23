@@ -1,4 +1,4 @@
-# nix-foundation
+# safeflight-hg-school
 
 ## Project setup
 ```
