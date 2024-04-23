@@ -1,15 +1,15 @@
 <template>
   <img id="portrait" alt="Portrait" src="./assets/portrait.jpg" />
-  <NixFoundation msg="Welcome to the Lynn Nix Foundation" />
+  <SafeflightHGSchool msg="Welcome to the SafeFlight Hang Gliding School" />
 </template>
 
 <script>
-import NixFoundation from "./components/NixFoundation.vue";
+import SafeFlightHGSchool from "./components/SafeFlightHGSchool.vue";
 
 export default {
   name: "App",
   components: {
-    NixFoundation,
+    SafeFlightHGSchool,
   },
 };
 </script>

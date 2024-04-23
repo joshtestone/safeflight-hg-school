@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nix-foundation-www
+  name: safeflight-hg-school-www
 spec:
   replicas: 1
   revisionHistoryLimit: 0
   selector:
     matchLabels:
-      app: nix-foundation-www
+      app: safeflight-hg-school-www
   template:
     metadata:
       labels:
-        app: nix-foundation-www
+        app: safeflight-hg-school-www
     spec:
       containers:
-      - image: alannix/nix-foundation:latest
-        name: nix-foundation-www
+      - image: jeffm415/safeflight-hg-school:latest
+        name: safeflight-hg-school-www
         ports:
         - containerPort: 8080

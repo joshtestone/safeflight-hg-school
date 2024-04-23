@@ -2,9 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      Honoring the lifelong goal of Carolyn "Lynn" Nix in which every one of us
-      can read and write,<br />
-      and there is free access to education for all.
+      Accident-free Days: 3
     </p>
     <h3>Essential Links</h3>
     <ul>
@@ -29,7 +27,7 @@
 
 <script>
 export default {
-  name: "NixFoundation",
+  name: "SafeFlightHGSchool",
   props: {
     msg: String,
   },
