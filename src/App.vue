@@ -1,5 +1,5 @@
 <template>
-  <img id="portrait" alt="Portrait" src="./assets/portrait.jpg" />
+  <img id="portrait" alt="Portrait" src="./assets/hg-fail.jpg" />
   <SafeflightHGSchool msg="Welcome to the SafeFlight Hang Gliding School" />
 </template>
 
