@@ -1,6 +1,6 @@
 <template>
   <img id="portrait" alt="Portrait" src="./assets/portrait.jpg" />
-  <SafeFlightHGSchool msg="Welcome to the SafeFlight Hang Gliding School" />
+  <SafeFlightHGSchool msg="Welcome to the SafeFlight Hang Gliding School!" />
 </template>
 
 <script>
