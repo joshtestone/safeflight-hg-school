@@ -39,7 +39,12 @@ module "eks" {
       most_recent = true
     }
     vpc-cni = {
-      most_recent = true
+      most_recent              = true
+      service_account_role_arn = "${module.vpc_cni_ipv4_irsa_role.iam_role_arn}"
+    }
+    aws-ebs-csi-driver = {
+      most_recent              = true
+      service_account_role_arn = "${module.ebs_csi_irsa_role.iam_role_arn}"
     }
   }
 
