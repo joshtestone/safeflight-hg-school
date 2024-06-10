@@ -1,0 +1,14 @@
+account_id                        = "457661787930"
+cluster_name                      = "pse-infra"
+cluster_version                   = "1.29"
+cluster_admins                    = ["arn:aws:iam::457661787930:user/demo", "arn:aws:iam::457661787930:role/457661787930-atlantis-deployer"]
+deploy_argocd                     = true
+deploy_atlantis                   = true
+deploy_external_secrets           = true
+deploy_wiz                        = true
+region                            = "us-west-2"
+vpc_name                          = "pse-infra"
+wiz_k8s_integration_client_id     = "brjsuefi6zbrfj6kdei2qkwb3m43ttoljopf5k422lntumjlrnfgm"
+wiz_k8s_integration_client_secret = "bufmH2TngWOHeHb6kEKPe13bHfqWZomsDDUGC0GOQu2cObbMtJ8RWuzT3Zw22FHA"
+wiz_sensor_pull_username          = "wizio-repo-0c532a10-a8f6-4312-a7ca-1911a82ac1db"
+wiz_sensor_pull_password          = "vNcUbobuOCWE6tvbvqvtApF6tTDyeqqrz2HTcYTHoD+ACRAg3w8K"

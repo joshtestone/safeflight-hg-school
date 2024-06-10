@@ -1,0 +1,13 @@
+terraform {
+  #required_version = "1.1.9"
+  backend "s3" {
+    bucket               = "457661787930-terraform-backend"
+    workspace_key_prefix = "terraform/aws/account/iam/atlantis_deployer"
+    key                  = "terraform.tfstate"
+    region               = "us-west-2"
+    dynamodb_table       = "457661787930_terraform_backend"
+    # Comment out the below line the first time you deploy
+    role_arn             = "arn:aws:iam::457661787930:role/457661787930-atlantis-deployer"
+    session_name         = "ATLANTIS"
+  }
+}
