@@ -100,8 +100,8 @@ resource "kubectl_manifest" "karpenter_node_pool" {
             - key: "karpenter.k8s.aws/instance-generation"
               operator: Gt
               values: ["2"]
-      limits:
-        cpu: 1000
+      # limits:
+      #   cpu: 1000
       disruption:
         consolidationPolicy: WhenEmpty
         consolidateAfter: 30s

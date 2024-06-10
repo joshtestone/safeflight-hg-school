@@ -39,7 +39,7 @@ data "aws_iam_policy_document" "secrets_manager" {
       "secretsmanager:ListSecretVersionIds"
     ]
     effect    = "Allow"
-    resources = ["arn:aws:secretsmanager:*:*:secret:atlantis-*"]
+    resources = ["arn:aws:secretsmanager:*:*:secret:*atlantis*"]
   }
 }
 
@@ -65,7 +65,7 @@ module "atlantis_manager_role" {
   create_role      = true
   role_description = "Allows Atlantis to manage terraform resources"
   oidc_fully_qualified_subjects = [
-    "system:serviceaccount:default:atlantis",
+    "system:serviceaccount:atlantis:atlantis",
   ]
   provider_url = data.aws_eks_cluster.this.identity[0].oidc[0].issuer
   tags         = local.tags
@@ -93,7 +93,7 @@ resource "helm_release" "atlantis" {
           source:
             repoURL: https://github.com/jmorgan415/safeflight-hg-school
             targetRevision: main
-            chart: argocd/charts/atlantis
+            path: argocd/charts/atlantis
             helm:
               values: |
                 atlantis:

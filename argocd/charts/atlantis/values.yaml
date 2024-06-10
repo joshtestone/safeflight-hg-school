@@ -6,9 +6,9 @@ atlantis:
     user: "override-in-secret"
   vcsSecretName: "wiz-atlantis"
 
-  serviceAccount:
-    annotations:
-      eks.amazonaws.com/role-arn: arn:aws:iam::457661787930:role/457661787930-pse-infra-atlantis-manager
+  # serviceAccount:
+  #   annotations:
+  #     eks.amazonaws.com/role-arn: arn:aws:iam::457661787930:role/457661787930-pse-infra-atlantis-manager
 
   # image:
   #   repository: 984186218765.dkr.ecr.us-east-2.amazonaws.com/atlantis
@@ -77,15 +77,15 @@ atlantis:
   #       - atlantis.wizdemo.co
   #       secretName: letsencrypt-production
 
-  dataStorage: 15Gi
+  # dataStorage: 15Gi
 
-  resources:
-    requests:
-      memory: 8Gi
-      cpu: 2
-    limits:
-      memory: 8Gi
-      cpu: 2
+  # resources:
+  #   requests:
+  #     memory: 8Gi
+  #     cpu: 2
+  #   limits:
+  #     memory: 8Gi
+  #     cpu: 2
 
   # extraVolumeMounts:
   #   - name: gcp-creds
