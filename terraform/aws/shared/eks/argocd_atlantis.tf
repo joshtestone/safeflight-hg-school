@@ -95,6 +95,9 @@ resource "helm_release" "atlantis" {
             targetRevision: main
             path: argocd/charts/atlantis
             helm:
+              releaseName: atlantis
+              valueFiles:
+              - values.yaml
               values: |
                 atlantis:
                   serviceAccount:
