@@ -53,6 +53,11 @@ atlantis:
   #   port: 80
   #   targetPort: 4141
 
+  service:
+    type: LoadBalancer
+    port: 80
+    targetPort: 4141
+  
   ingress:
     enabled: false
   #   ingressClassName: nginx
