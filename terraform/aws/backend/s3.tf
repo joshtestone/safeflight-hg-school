@@ -5,7 +5,6 @@ resource "aws_s3_bucket" "terraform_backend" {
       Name = "S3 Remote Terraform State Store for Atlantis"
       Terraform = "true"
       Workspace = "s3://457661787930-terraform-backend/terraform/aws/backend/${terraform.workspace}"
-      Test      = "true"
     }
 }
 
