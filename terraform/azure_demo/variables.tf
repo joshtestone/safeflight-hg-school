@@ -28,3 +28,10 @@ variable "admin_password" {
   sensitive   = true
   default     = null
 }
+
+variable "jdbc_connection_string" {
+  type        = string
+  description = "The connection string of the SQL logical server."
+  sensitive   = true
+  default     = "jdbc:mysql://admin:wiz@host1:3306/test"
+}
