@@ -12,6 +12,9 @@ COPY package*.json ./
 # copy both 'babel.config.js'
 COPY babel.config.js ./
 
+# Copy dummy data
+COPY dummy_records.csv ./
+
 # install project dependencies
 RUN npm install
 
