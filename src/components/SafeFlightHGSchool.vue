@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Days Since Last Accident: 1</h2>
+    <h2>Days Since Last Accident: 0</h2>
     <h3>Essential Links</h3>
     <ul>
       <li>
